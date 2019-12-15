@@ -18,20 +18,15 @@ object scalasortfuncstyle
 	}
 }
 
-/** Quick sort, imperative style */
 object ImperativeQuickSort {
 
-  /** Nested methods can use and even update everything 
-   *  visible in their scope (including local variables or 
-   *  arguments of enclosing methods). 
-   */
-  def sort(a: Array[Int]) {
+  def sort(a: Array[Int]){
 
     def swap(i: Int, j: Int) {
       val t = a(i); a(i) = a(j); a(j) = t
     }
 
-    def sort1(l: Int, r: Int) {
+    def sort1(l: Int, r: Int){
       val pivot = a((l + r) / 2)
       var i = l
       var j = r
@@ -52,20 +47,11 @@ object ImperativeQuickSort {
       sort1(0, a.length - 1)
   }
 
-  def println(ar: Array[Int]) {
-    def print1 = {
-      def iter(i: Int): String =
-        ar(i) + (if (i < ar.length-1) "," + iter(i+1) else "")
-      if (ar.length == 0) "" else iter(0)
-    }
-    Console.println("[" + print1 + "]")
-  }
-
   def main(args: Array[String]) {
     val ar = Array(6, 2, 8, 5, 1)
-    println(ar)
+    println("["+ar.mkString(" ")+"]")
     sort(ar)
-    println(ar)
+    println("["+ar.mkString(" ")+"]")
   }
 
 }
