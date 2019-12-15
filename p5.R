@@ -14,7 +14,7 @@ if(ca > cm){
   print("Manual") 
 }
 
-plot(mtcars$hp, mtcars$wt, 'b')
+plot(mtcars$hp, mtcars$wt, 'p')
 attach(mtcars)
 
 newmtc=data.frame(mpg, as.integer(cyl), disp, hp, drat, wt, qsec, as.integer(vs), as.integer(am), gear, carb)
