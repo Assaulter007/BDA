@@ -22,5 +22,5 @@ x <- data.frame(usn, name, marks, age)
 print(x)
 summary(x)
 
-range1 <- subset(x, marks > 25 & name=="Jaffar")
+range1 <- subset(x, marks > 25 & name=="Akash")
 print(range1)
