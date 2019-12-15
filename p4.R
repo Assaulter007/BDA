@@ -23,6 +23,6 @@ write.csv(emp, file="l4.csv")
 
 read.csv("l4.csv")
 
-x = data.frame(2, "2", "Jaff", "16/09/97", "emp2", "net", "CRO")
+x = data.frame(2,"Hatake", "16/09/97", "emp2", "net", "CRO")
 write.table(x, file="l4.csv", append = TRUE, sep = ",", quote = FALSE, col.names = FALSE, row.names = FALSE)
 read.csv("l4.csv")
